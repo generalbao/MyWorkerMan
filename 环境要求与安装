@@ -1,0 +1,22 @@
+
+2016年11月16日19:50:31
+
+运行所需环境
+1、WorkerMan 要求运行在Linux环境下（centos、RedHat、Ubuntu、debian等）,也可以运行在mac os下。windows版本及注意事项参见这里。
+
+2、安装有PHP-CLI(版本不小于5.4)，并安装了pcntl、posix扩展    直接yum
+
+3、建议安装event或者libevent扩展，但不是必须的
+
+环境检查脚本
+可以运行以下脚本检查本地环境是否满足WorkerMan要求
+
+curl -Ss http://www.workerman.net/check.php | php
+
+如果脚本中全部提示ok，则代表满足WorkerMan运行环境
+
+
+4 php test.php start
+
+5  然后再浏览器访问就行了，如果访问不了，检查一下防火墙就行了
+
